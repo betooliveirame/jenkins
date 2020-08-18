@@ -1,3 +1,4 @@
 # comment line should be skipped
 
 configuration-as-code:latest
+simple-theme-plugin:latest
