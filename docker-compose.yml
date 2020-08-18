@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+    jenkins:
+        image: betoliveirame/jenkins-server:latest
+        container_name: jenkins
+        network_mode: host
+        restart: always
+        ports:
+            - 8080:8080
+            - 50000:50000
+        # volumes:
+        #     - /docker/jenkins/data:/var/jenkins_home
