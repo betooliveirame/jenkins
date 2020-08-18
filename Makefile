@@ -5,7 +5,7 @@ build-server:
 	cd -
 
 run:
-	docker-compose up --remove-orphans
+	docker-compose up -d
 
 removeall:
 	docker-compose stop && \
