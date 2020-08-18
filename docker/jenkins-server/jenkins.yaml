@@ -1,0 +1,14 @@
+jenkins:
+  systemMessage: "Jenkins Server"
+  numExecutors: 5
+  scmCheckoutRetryCount: 2
+  mode: NORMAL
+
+  authorizationStrategy:
+    loggedInUsersCanDoAnything:
+      allowAnonymousRead: false
+
+unclassified:
+  location:
+    adminAddress: "betoliveirame@icloud.com"
+    url: "http://ci-server.local:8080/"

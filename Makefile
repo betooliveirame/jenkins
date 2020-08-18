@@ -6,7 +6,10 @@ build-server:
 
 run:
 	docker-compose up -d
+	cd -
 
 removeall:
 	docker-compose stop && \
-	docker-compose rm
+	docker-compose rm && \
+	docker rmi -f betoliveirame/jenkins-server
+	cd -
