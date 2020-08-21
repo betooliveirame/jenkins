@@ -1,5 +1,5 @@
 
-build-server:
+build:
 	cd ./docker/jenkins-server && \
 	docker build -t betoliveirame/jenkins-server . && \
 	cd -
@@ -8,10 +8,12 @@ run:
 	docker-compose up -d
 	cd -
 
-removeall:
+remove:
 	docker-compose stop && \
 	docker-compose rm && \
 	docker rmi -f betoliveirame/jenkins-server
 	cd -
 
-rebuild: removeall build-server run
+install: build run
+
+rebuild: remove build run
