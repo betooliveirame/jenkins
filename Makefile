@@ -13,3 +13,5 @@ removeall:
 	docker-compose rm && \
 	docker rmi -f betoliveirame/jenkins-server
 	cd -
+
+rebuild: removeall build-server run

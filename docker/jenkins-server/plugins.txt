@@ -2,3 +2,5 @@
 
 configuration-as-code:latest
 simple-theme-plugin:latest
+workflow-aggregator:latest
+git:latest
